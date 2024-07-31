@@ -46,6 +46,7 @@ let pointer = 0;
 
 // load initial item
 window.addEventListener('DOMContentLoaded', () => {
+  preloading();
   showPerson(pointer);
 });
 
@@ -89,3 +90,11 @@ function showPerson(idx) {
   job.textContent = item.job;
   info.textContent = item.text;
 };
+
+function preloading() {
+  reviews.forEach((review) => {
+    const img = new Image();
+    img.src = review.img;
+    console.log("로드가 되었습니다" + review.img);
+  })
+}
