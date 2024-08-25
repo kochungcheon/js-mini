@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="reset.css" rel="stylesheet" />
+</head>
+<body>
+  <style>
+    #util {
+      background-color: red;
+      position: fixed;
+      height: 100vh;
+    }
+    #util.started_left {
+      left: 0;
+    }
+    #util.started_right {
+      right: 0;
+    }
+    /* #util .drawer {
+      position: absolute;
+      left: 100%;
+      width: 30px;
+      height: 100vh;
+      background-color: aquamarine;
+    } */
+
+  </style>
+  <div id="util">
+    <div class="drawer">드로어에 해당합니다.</div>
+    <nav>
+      <ul>
+        <li>submenu 1</li>
+      </ul>
+    </nav>
+  </div>
+  <main style="background-color: blanchedalmond;width:100vw;height:100vh;padding:0 70px;">메인화면에 해당합니다. </main>
+  <script src="main.js"></script>
+</body>
+</html>
